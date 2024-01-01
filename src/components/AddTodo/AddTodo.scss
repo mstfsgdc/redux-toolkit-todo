@@ -1,0 +1,35 @@
+$buttonBg: #f0f0f0;
+$buttonBg-hover: darken($buttonBg, 10%);
+$buttonBg-active: darken($buttonBg, 15%);
+
+$buttonBorder: lighten($buttonBg, 5%);
+
+.addtodo {
+    display: flex;
+    gap: .5rem;
+
+    input {
+        padding: .5rem;
+        border-radius: .5rem;
+        border: 0;
+        outline: 0;
+    }
+
+    button {
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        background-color: $buttonBg;
+        border: 1px solid $buttonBorder;
+
+        &:hover {
+            background-color: $buttonBg-hover;
+        }
+
+        &:active {
+            background-color: $buttonBg-active;
+        }
+    }
+}

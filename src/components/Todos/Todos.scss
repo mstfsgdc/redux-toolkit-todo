@@ -1,0 +1,8 @@
+@import "../../colors";
+
+.todos {
+    padding: 1rem;
+    border: 1px solid darken($secondary, 25%);
+    border-radius: 1rem;
+    margin: .5rem 0;
+}

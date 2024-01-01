@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Albert+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "./colors";
+
+body, html, #root {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Albert Sans';
+}
+
+.container {
+    background-color: $secondary;
+    color: $primary;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+    padding: .5rem 1.25rem;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
