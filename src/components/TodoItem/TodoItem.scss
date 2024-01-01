@@ -1,0 +1,19 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    padding: .25rem;
+
+    input[type=checkbox] {
+        accent-color: crimson;
+    }
+
+    span {
+        line-break: anywhere;
+
+        &.completed {
+            text-decoration: line-through;
+        }
+    }
+}

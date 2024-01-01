@@ -1,6 +1,7 @@
 @import "../../colors";
 
 .todos {
+    max-width: 500px;
     padding: 1rem;
     border: 1px solid darken($secondary, 25%);
     border-radius: 1rem;
