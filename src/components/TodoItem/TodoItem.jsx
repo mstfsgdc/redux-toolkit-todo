@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-import { Button } from "../../components";
 import "./TodoItem.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Todo = ({ todo, onToggle, onRemove }) => {
   return (
@@ -11,7 +12,7 @@ const Todo = ({ todo, onToggle, onRemove }) => {
         onChange={() => onToggle(todo.id)}
       />
       <span className={todo.completed ? "completed" : ""}>{todo.text}</span>
-      <Button onClick={() => onRemove(todo.id)}>Remove</Button>
+      <FontAwesomeIcon icon={faTrash} onClick={() => onRemove(todo.id)} className="deleteIcon" />
     </div>
   );
 };

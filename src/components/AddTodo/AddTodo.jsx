@@ -3,6 +3,8 @@ import { useState } from "react";
 import { addTodo } from "../../redux/todosSlice";
 import { useDispatch } from "react-redux";
 import { Button } from "../../components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function AddTodo() {
   const dispatch = useDispatch();
@@ -31,7 +33,9 @@ export default function AddTodo() {
         autoFocus
         onKeyDown={handleKeyDown}
       />
-      <Button onClick={handleAddTodo}>Add</Button>
+      <Button onClick={handleAddTodo}>
+        Add <FontAwesomeIcon icon={faPlus} className="addIcon" />
+      </Button>
     </div>
   );
 }

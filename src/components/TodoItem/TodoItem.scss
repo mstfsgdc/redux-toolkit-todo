@@ -1,19 +1,31 @@
+@import "../../colors";
+
 .todo-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
     padding: .25rem;
+    border-bottom: 1px solid $primary;
 
     input[type=checkbox] {
         accent-color: crimson;
     }
 
+    input[type=checkbox], .deleteIcon {
+        cursor: pointer;
+    }
+
     span {
         line-break: anywhere;
+        width: 100%;
 
         &.completed {
             text-decoration: line-through;
         }
+    }
+
+    .deleteIcon {
+        color: $primary;
     }
 }

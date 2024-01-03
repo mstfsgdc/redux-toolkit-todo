@@ -14,6 +14,7 @@ body, html, #root {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 main {
@@ -32,4 +33,12 @@ header, main, footer {
 a {
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    &, &:visited {
+        color: inherit;
+    }
 }

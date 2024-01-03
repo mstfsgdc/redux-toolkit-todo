@@ -1,3 +1,5 @@
+@import "../../colors";
+
 .addtodo {
     display: flex;
     gap: .5rem;
@@ -7,5 +9,9 @@
         border-radius: .5rem;
         border: 0;
         outline: 0;
+    }
+
+    .addIcon {
+        color: $primary;
     }
 }
